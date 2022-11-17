@@ -3,7 +3,7 @@
  * @Desc: 配置文件的入口文件，也可以是 YML 或 toml
  */
 module.exports = {
-  base: "/web-dev-utils/",
+  base: "/web_dev_utils/",
   title: "Hello VuePress",
   description: "Just playing around",
   themeConfig: {
