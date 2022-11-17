@@ -4,9 +4,11 @@
  */
 module.exports = {
   base: "/web_dev_utils/",
-  title: "Hello VuePress",
+  title: "Web开发工具",
   description: "Just playing around",
+  theme: 'reco',
   themeConfig: {
+    subSidebar: 'auto',
     // 右上角导航
     nav: [
       { text: 'Home', link: '/' },
@@ -32,7 +34,79 @@ module.exports = {
           '/guide/mark拓展',
           '/guide/markdown中使用vue'
         ]
-      }
+      },
+      {
+        title: '业务',
+        path: '/business/',
+        collapsable: false,
+        sidebarDepth: 1,    // 可选的, 默认值是 1
+        children: [
+          { title: "first", path: "/business/" },
+        ]
+      },
+      {
+        title: '布局',
+        path: '/layout/',
+        collapsable: false,
+        sidebarDepth: 1,    // 可选的, 默认值是 1
+        children: [
+          '/'
+        ]
+      },
+      {
+        title: '组件',
+        path: '/components/',
+        collapsable: false,
+        sidebarDepth: 1,    // 可选的, 默认值是 1
+        children: [
+          '/'
+        ]
+      },
+      {
+        title: '交互',
+        path: '/interact/',
+        collapsable: false,
+        sidebarDepth: 1,    // 可选的, 默认值是 1
+        children: [
+          '/'
+        ]
+      },
+      {
+        title: '动画',
+        path: '/animation/',
+        collapsable: false,
+        sidebarDepth: 1,    // 可选的, 默认值是 1
+        children: [
+          { title: "first", path: "/business/" },
+        ]
+      },
+      {
+        title: '数据',
+        path: '/data/',
+        collapsable: false,
+        sidebarDepth: 1,    // 可选的, 默认值是 1
+        children: [
+          '/'
+        ]
+      },
+      {
+        title: '算法',
+        path: '/algorithm/',
+        collapsable: false,
+        sidebarDepth: 1,    // 可选的, 默认值是 1
+        children: [
+          '/'
+        ]
+      },
+      {
+        title: '插件',
+        path: '/plug/',
+        collapsable: false,
+        sidebarDepth: 1,    // 可选的, 默认值是 1
+        children: [
+          '/'
+        ]
+      },
     ]
   },
   markdown: {
