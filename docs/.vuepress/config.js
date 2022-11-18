@@ -41,7 +41,16 @@ module.exports = {
         collapsable: false,
         sidebarDepth: 1,    // 可选的, 默认值是 1
         children: [
-          { title: "first", path: "/business/" },
+          { 
+            title: "统计代码", 
+            path: "/business/statistics/",
+            children: [
+              {
+                title: "动态添加cnzz统计代码与百度统计",
+                path: "/business/statistics/addDynamically"
+              }
+            ]
+          },
         ]
       },
       {
