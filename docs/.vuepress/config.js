@@ -25,17 +25,6 @@ module.exports = {
     ],
     sidebar: [
       {
-        title: 'vuepress测试',
-        path: '/guide/',
-        collapsable: false,
-        sidebarDepth: 1,    // 可选的, 默认值是 1
-        children: [
-          '/guide/guide-1',
-          '/guide/mark拓展',
-          '/guide/markdown中使用vue'
-        ]
-      },
-      {
         title: '业务',
         path: '/business/',
         collapsable: false,
@@ -44,6 +33,7 @@ module.exports = {
           { 
             title: "统计代码", 
             path: "/business/statistics/",
+            collapsable: false,
             children: [
               {
                 title: "动态添加cnzz统计代码与百度统计",
@@ -59,7 +49,40 @@ module.exports = {
         collapsable: false,
         sidebarDepth: 1,    // 可选的, 默认值是 1
         children: [
-          '/'
+          {
+            title: "原生",
+            path: "/layout/origin/",
+            collapsable: false,
+            children: [
+              {
+                title: "Flex布局与问题",
+                path: "/layout/origin/flex"
+              },
+              {
+                title: "Css超出界限左右划动",
+                path: "/layout/origin/css_ul_swiper"
+              }
+            ]
+          },
+          {
+            title: "Vue",
+            path: "/layout/vue/",
+            collapsable: false,
+            children: [
+              {
+                title: "Vue组件使用手册",
+                path: "/layout/vue/vue_component_refres"
+              },
+              {
+                title: "Vue展示与操作lottie动画",
+                path: "/layout/vue/vue_lottie_bottom_navigation"
+              },
+              {
+                title: "Nuxt.js 相关路由跳转不刷新",
+                path: "/layout/vue/vue_page_change"
+              },
+            ]
+          },
         ]
       },
       {
@@ -77,7 +100,51 @@ module.exports = {
         collapsable: false,
         sidebarDepth: 1,    // 可选的, 默认值是 1
         children: [
+          // {
+          //   title: "浏览器后退监听",
+          //   path: "/interact/push_state"
+          // }
           '/'
+        ]
+      },
+      {
+        title: '事件',
+        path: '/event/',
+        collapsable: false,
+        sidebarDepth: 1,    // 可选的, 默认值是 1
+        children: [
+          {
+            title: "Scroll事件使用手册",
+            path: "/event/scroll_event"
+          },
+          {
+            title: "浏览器后退事件监听",
+            path: "/event/push_state"
+          }
+        ]
+      },
+      {
+        title: '数据',
+        path: '/data/',
+        collapsable: false,
+        sidebarDepth: 1,    // 可选的, 默认值是 1
+        children: [
+          {
+            title: "String类型使用手册",
+            path: "/data/string_use"
+          }
+        ]
+      },
+      {
+        title: '网络',
+        path: '/network/',
+        collapsable: false,
+        sidebarDepth: 1,    // 可选的, 默认值是 1
+        children: [
+          {
+            title: "占位",
+            path: "/network/zw"
+          }
         ]
       },
       {
@@ -87,15 +154,6 @@ module.exports = {
         sidebarDepth: 1,    // 可选的, 默认值是 1
         children: [
           { title: "first", path: "/business/" },
-        ]
-      },
-      {
-        title: '数据',
-        path: '/data/',
-        collapsable: false,
-        sidebarDepth: 1,    // 可选的, 默认值是 1
-        children: [
-          '/'
         ]
       },
       {
