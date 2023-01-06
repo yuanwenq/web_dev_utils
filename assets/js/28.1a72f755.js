@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[28],{436:function(t,s,n){"use strict";n.r(s);var e=n(2),o=Object(e.a)({},(function(){var t=this._self._c;return t("ContentSlotsDistributor",{attrs:{"slot-key":this.$parent.slotKey}},[t("h1",{attrs:{id:"交互"}},[this._v("交互")])])}),[],!1,null,null,null);s.default=o.exports}}]);
