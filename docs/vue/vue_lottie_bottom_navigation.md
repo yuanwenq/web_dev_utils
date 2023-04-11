@@ -59,7 +59,7 @@ animation.destroy(); // 删除该动画，移除相应的元素标签等。
 
 ### lottie底部导航栏
 
-![BottomNavigationBar](../../images/bottom_navigation_bar.png)
+![BottomNavigationBar](../images/bottom_navigation_bar.png)
 
 BottomNavigationBar.vue
 ```vue

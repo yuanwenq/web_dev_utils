@@ -4,7 +4,7 @@
  */
 module.exports = {
   base: '/web_dev_utils/',
-  title: 'Web开发工具',
+  title: '《Web开发手册》',
   description: 'Just playing around',
   theme: 'reco',
   themeConfig: {
@@ -12,89 +12,120 @@ module.exports = {
     // 右上角导航
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/guide/' },
-      { text: 'External', link: 'https://google.com' },
-      {
-        text: 'Languages',
-        ariaLabel: 'Language Menu',
-        items: [
-          { text: 'Chinese', link: '/language/chinese/' },
-          { text: 'Japanese', link: '/language/japanese/' },
-        ],
-      },
+      // { text: 'Guide', link: '/guide/' },
+      // { text: 'External', link: 'https://google.com' },
+      // {
+      //   text: 'Languages',
+      //   ariaLabel: 'Language Menu',
+      //   items: [
+      //     { text: 'Chinese', link: '/language/chinese/' },
+      //     { text: 'Japanese', link: '/language/japanese/' },
+      //   ],
+      // },
     ],
     sidebar: [
       {
         title: '业务',
-        path: '/business/',
         collapsable: false,
-        sidebarDepth: 1, // 可选的, 默认值是 1
+        // sidebarDepth: 1, // 可选的, 默认值是 1
         children: [
           {
-            title: '统计代码',
-            path: '/business/statistics/',
-            collapsable: false,
-            children: [
-              {
-                title: '动态添加cnzz统计代码与百度统计',
-                path: '/business/statistics/addDynamically',
-              },
-            ],
+            title: 'IP自动挂靠方案',
+            path: '/business/automatic_anchoring',
+          },
+          {
+            title: '动态添加统计代码',
+            path: '/business/addDynamically',
           },
         ],
       },
       {
-        title: '布局',
-        path: '/layout/',
+        title: 'JavaScript',
         collapsable: false,
-        sidebarDepth: 1, // 可选的, 默认值是 1
         children: [
           {
-            title: '原生',
-            path: '/layout/origin/',
-            collapsable: false,
-            children: [
-              {
-                title: 'Flex布局与问题',
-                path: '/layout/origin/flex',
-              },
-              {
-                title: 'Css超出界限左右划动',
-                path: '/layout/origin/css_ul_swiper',
-              },
-            ],
+            title: '数据类型',
+            path: '/javascript/base_type',
           },
           {
-            title: 'Vue',
-            path: '/layout/vue/',
-            collapsable: false,
-            children: [
-              {
-                title: 'Vue组件使用手册',
-                path: '/layout/vue/vue_component_refres',
-              },
-              {
-                title: 'Vue展示与操作lottie动画',
-                path: '/layout/vue/vue_lottie_bottom_navigation',
-              },
-              {
-                title: 'Nuxt.js 相关路由跳转不刷新',
-                path: '/layout/vue/vue_page_change',
-              },
-            ],
+            title: '浅拷贝与深拷贝',
+            path: '/javascript/js_copy',
           },
         ],
       },
       {
-        title: '组件',
-        path: '/components/',
+        title: 'TypeScript',
+        collapsable: false,
+        children: [
+          {
+            title: '简介',
+            path: '/typescript/introduction',
+          },
+          {
+            title: '安装',
+            path: '/typescript/typescript_env',
+          },
+          {
+            title: '基础概念',
+            path: '/typescript/concept',
+          },
+          {
+            title: '接口',
+            path: '/typescript/interface',
+          },
+          {
+            title: '数组的类型',
+            path: '/typescript/array',
+          },
+          {
+            title: '函数的类型',
+            path: '/typescript/func',
+          },
+          {
+            title: '类型断言',
+            path: '/typescript/assert',
+          },
+          {
+            title: '声明文件',
+            path: '/typescript/declare',
+          },
+        ],
+      },
+      {
+        title: 'Vue',
+        collapsable: false,
+        children: [
+          {
+            title: 'Vue组件使用手册',
+            path: '/vue/vue_component_refres',
+          },
+          {
+            title: 'Vue展示与操作lottie动画',
+            path: '/vue/vue_lottie_bottom_navigation',
+          },
+          {
+            title: 'Nuxt.js 相关路由跳转不刷新',
+            path: '/vue/vue_page_change',
+          },
+        ],
+      },
+      {
+        title: 'CSS',
         collapsable: false,
         sidebarDepth: 1, // 可选的, 默认值是 1
-        children: ['/'],
+        children: [
+          {
+            title: 'Flex布局与问题',
+            path: '/layout/origin/flex',
+          },
+          {
+            title: 'Css超出界限左右划动',
+            path: '/layout/origin/css_ul_swiper',
+          },
+        ],
       },
       {
         title: '交互',
-        path: '/interact/',
         collapsable: false,
         sidebarDepth: 1, // 可选的, 默认值是 1
         children: [
@@ -106,8 +137,13 @@ module.exports = {
         ],
       },
       {
+        title: '组件',
+        collapsable: false,
+        sidebarDepth: 1, // 可选的, 默认值是 1
+        children: ['/'],
+      },
+      {
         title: '事件',
-        path: '/event/',
         collapsable: false,
         sidebarDepth: 1, // 可选的, 默认值是 1
         children: [
@@ -123,7 +159,6 @@ module.exports = {
       },
       {
         title: '数据',
-        path: '/data/',
         collapsable: false,
         sidebarDepth: 1, // 可选的, 默认值是 1
         children: [
@@ -135,7 +170,6 @@ module.exports = {
       },
       {
         title: '网络',
-        path: '/network/',
         collapsable: false,
         sidebarDepth: 1, // 可选的, 默认值是 1
         children: [
@@ -146,22 +180,13 @@ module.exports = {
         ],
       },
       {
-        title: '动画',
-        path: '/animation/',
-        collapsable: false,
-        sidebarDepth: 1, // 可选的, 默认值是 1
-        children: [{ title: 'first', path: '/business/' }],
-      },
-      {
         title: '算法',
-        path: '/algorithm/',
         collapsable: false,
         sidebarDepth: 1, // 可选的, 默认值是 1
         children: ['/'],
       },
       {
         title: '插件',
-        path: '/plug/',
         collapsable: false,
         sidebarDepth: 1, // 可选的, 默认值是 1
         children: ['/'],

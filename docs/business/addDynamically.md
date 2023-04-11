@@ -1,4 +1,6 @@
-# 动态添加cnzz统计代码与百度统计
+---
+title: "动态添加统计代码"
+---
 
 ## 介绍
 
@@ -18,7 +20,7 @@ var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
   hm.src = "https://hm.baidu.com/hm.js?xxxxxxxxxxxxxxxxx";
-  var s = document.getElementsByTagName("script")[0]; 
+  var s = document.getElementsByTagName("script")[0];
   s.parentNode.insertBefore(hm, s);
 })();
 </script>
