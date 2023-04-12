@@ -51,6 +51,26 @@ module.exports = {
             title: '浅拷贝与深拷贝',
             path: '/javascript/js_copy',
           },
+          {
+            title: '闭包的理解',
+            path: '/javascript/js_closure',
+          },
+          {
+            title: '作用域链的理解',
+            path: '/javascript/scope_chain',
+          },
+          {
+            title: '原型与原型链',
+            path: '/javascript/prototype_chain',
+          },
+          {
+            title: 'this对象的理解',
+            path: '/javascript/this',
+          },
+          {
+            title: '执行上下文和执行栈',
+            path: '/javascript/execution_context',
+          },
         ],
       },
       {
@@ -194,20 +214,6 @@ module.exports = {
     ],
   },
   markdown: {
-    // markdown-it-anchor 的选项
-    anchor: { permalink: false },
-    // markdown-it-toc 的选项
-    toc: { includeLevel: [1, 2] },
-    extendMarkdown: (md) => {
-      // 使用更多的 markdown-it 插件!
-      // md.use(require('markdown-it-xxx'))
-    },
+    lineNumbers: true,
   },
-  // configureWebpack: {
-  //   resolve: {
-  //     alias: {
-  //       '@images': '/docs/.vuepress/public/images/'
-  //     }
-  //   }
-  // }
 };
