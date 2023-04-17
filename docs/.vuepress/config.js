@@ -71,6 +71,10 @@ module.exports = {
             title: '执行上下文和执行栈',
             path: '/javascript/execution_context',
           },
+          {
+            title: '事件模型',
+            path: '/javascript/event_model',
+          },
         ],
       },
       {
