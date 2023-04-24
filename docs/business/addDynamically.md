@@ -12,7 +12,7 @@ title: "动态添加统计代码"
 
 ## 代码
 
-### cnzz统计 与 百度统计
+### 统计代码
 ```javascript
 // 百度统计
 <script>
@@ -25,8 +25,15 @@ var _hmt = _hmt || [];
 })();
 </script>
 
+
+
 // cnzz统计
 <script type="text/javascript">document.write(unescape("%3Cspanid='cnzz_stat_icon_000000001'%3E%3C/span%3E%3Cscript src='https://v1.cnzzcom/z_stat.php%3Fid%0000001' type='text/javascript'%3E%3C/script%3E"))</script>
+
+
+
+// 51统计/单页面统计
+!function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"K2M2GLNHhWl4eq3h",ck:"K2M2GLNHhWl4eq3h",hashMode:true});
 ```
 
 ### 动态追加
@@ -55,6 +62,13 @@ appendStatistics(type, script) {
     newScript.innerHTML = scriptVal;
     document.body.appendChild(newScript);
   }
+  // 51统计
+  else if (type == 3) {
+    let newScript = document.createElement("script");
+    newScript.type = "text/javascript";
+    newScript.innerHTML = script;
+    document.body.appendChild(newScript);
+  }
 }
 ```
 
@@ -67,3 +81,7 @@ appendStatistics(type, script) {
 ## 参考
 
 - [CNZZ 如何将JS代码更换成异步统计代码？](https://help.cnzz.com/support/kuaisuanzhuangdaima/2016/1011/185.html)
+
+## 注意
+
+- 统计代码的加载顺序至关重要，每种统计代码的算法都是不一样的，cnzz统计的ip数始终会显得多一点，而51统计的ip数会少一点

@@ -30,7 +30,7 @@ module.exports = {
         // sidebarDepth: 1, // 可选的, 默认值是 1
         children: [
           {
-            title: 'IP自动挂靠方案',
+            title: '渠道挂靠方案',
             path: '/business/automatic_anchoring',
           },
           {
